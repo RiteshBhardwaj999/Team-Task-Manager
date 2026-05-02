@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["nodejs_20", "maven", "jdk17"]
+nixPkgs = ["nodejs_22", "maven", "jdk17"]
 
 [phases.build]
 cmds = [
