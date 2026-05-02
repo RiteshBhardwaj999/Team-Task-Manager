@@ -75,13 +75,6 @@ npm run dev
 # Frontend starts on http://localhost:5173 with API proxy to :8080
 ```
 
-### 6. Full production build
-```bash
-bash build.sh
-java -jar backend/target/*.jar
-# Visit http://localhost:8080
-```
-
 ---
 
 ## Environment Variables
