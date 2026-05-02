@@ -2,8 +2,7 @@
 
 A full-stack web application for managing projects, assigning tasks, and tracking progress with role-based access control.
 
-**Live URL:** `https://<your-app>.up.railway.app`  
-**GitHub Repo:** `https://github.com/<your-username>/team-task-manager`
+**Live URL:** `https://<your-app>.up.railway.app`
 
 ---
 
