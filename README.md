@@ -2,7 +2,7 @@
 
 A full-stack web application for managing projects, assigning tasks, and tracking progress with role-based access control.
 
-**Live URL:** `https://<your-app>.up.railway.app`
+**Live URL:** `adorable-happiness-production-b581.up.railway.app`
 
 ---
 
