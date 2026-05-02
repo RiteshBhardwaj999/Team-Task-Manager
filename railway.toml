@@ -1,12 +1,10 @@
-[phases.setup]
-nixPkgs = ["nodejs_22", "maven", "jdk17"]
-nixArchive = "https://github.com/NixOS/nixpkgs/archive/nixos-24.11.tar.gz"
+[build]
+builder = "NIXPACKS"
+buildCommand = "cd frontend && npm install && npm run build && cp -r dist/. ../backend/src/main/resources/static/ && cd ../backend && mvn clean package -DskipTests"
 
-[phases.build]
-cmds = [
-    "cd frontend && npm install && npm run build && cp -r dist/. ../backend/src/main/resources/static/",
-    "cd backend && mvn clean package -DskipTests"
-]
-
-[start]
-cmd = "java $JAVA_OPTS -jar backend/target/*.jar"
+[deploy]
+startCommand = "java $JAVA_OPTS -jar backend/target/*.jar"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
