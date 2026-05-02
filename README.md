@@ -2,8 +2,7 @@
 
 A full-stack web application for managing projects, assigning tasks, and tracking progress with role-based access control.
 
-**Live URL:** `https://<your-app>.up.railway.app`  
-**GitHub Repo:** `https://github.com/<your-username>/team-task-manager`
+**Live URL:** `https://<your-app>.up.railway.app`
 
 ---
 
@@ -74,13 +73,6 @@ cd frontend
 npm install
 npm run dev
 # Frontend starts on http://localhost:5173 with API proxy to :8080
-```
-
-### 6. Full production build
-```bash
-bash build.sh
-java -jar backend/target/*.jar
-# Visit http://localhost:8080
 ```
 
 ---
